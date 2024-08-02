@@ -6,26 +6,63 @@
 .img{
     width: 100%;
     height: 110vh;
-    opacity: .8;
+    opacity: .7;
 }
 ul li{
     list-style-type:none;
 }
 .nav{
     position: absolute;
-   top: 0.5%;
-    left: 10%;
+    top: 0.5%;
+    left: 20%;
   
 }
 a{
     list-style-type:none;
     text-decoration: none;
+    font-family: 'Pally', sans-serif;
+     color: rgb(255, 255, 255);
+     font-weight: 800;
+     letter-spacing: 2px;
+     font-size: larger;
 }
 
 .list{
     display: grid;
     grid-template-rows: 100px;
-    grid-template-columns: 10vw 10vw 10vw 10vw;
+    grid-template-columns: 10vw 10vw 10vw 15vw;
     justify-content: center;
     align-items: center;
+}
+.n1{
+     padding: 3px 15px 3px 15px;
+}
+.n1:hover{
+    border: 3px solid rgb(69, 69, 69);
+    background-color: #6C7172;
+    border-radius: 10%;
+}
+.n2{
+    padding: 3px 15px 3px 15px;
+}
+.n2:hover{
+   border: 3px solid rgb(69, 69, 69);
+   background-color: #6C7172;
+   border-radius: 10%;
+}
+.n3{
+    padding: 3px 15px 3px 15px;
+}
+.n3:hover{
+   border: 3px solid rgb(69, 69, 69);
+   background-color: #6C7172;
+   border-radius: 10%;
+}
+.n4{
+    padding: 3px 15px 3px 15px;
+}
+.n4:hover{
+   border: 3px solid rgb(69, 69, 69);
+   background-color: #6C7172;
+   border-radius: 10%;
 }
