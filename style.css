@@ -113,5 +113,15 @@ a{
    letter-spacing: 1px;
 }
 .service{
+    position: absolute;
+    top: 78%;
+    left: 43%;
     width: 20%;
+    height: 10%;
+    border: 2px solid black;
+    color: #2a2c2c;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 700;
+    background-color: #A09E95;
+    font-size: x-large;
 }
