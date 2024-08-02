@@ -1,46 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Plant Paradise</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://api.fontshare.com/v2/css?f[]=pally@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=pally@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Modern+Antiqua&family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!--RESPONSIVE BACKGROUND IMAGE ADDED-->
+    <picture>
+      <source srcset="mobile.jpg" media="(max-width: 600px)" />
+      <source srcset="tablet.jpg" media="(max-width: 1500px)" />
+      <source srcset="bg.jpg" />
+      <img src="bg.jpg" alt="bgimg" class="img" />
+    </picture>
 
-</head>
-<body>
-       <!--RESPONSIVE BACKGROUND IMAGE ADDED-->
-        <picture >
-            <source srcset="mobile.jpg" media="(max-width: 600px)">
-            <source srcset="tablet.jpg" media="(max-width: 1500px)">
-            <source srcset="bg.jpg">
-            <img src="bg.jpg" alt="bgimg" class="img">
-          </picture>
- 
+    <!--NAVBAR SECTION-->
+    <div class="nav">
+      <ul>
+        <div class="list">
+          <li><a href="#" class="n1">Home</a></li>
+          <li><a href="#" class="n2">Sevices</a></li>
+          <li><a href="#" class="n3">About Us</a></li>
+          <li><a href="#" class="n4">Contact Us</a></li>
+        </div>
+      </ul>
+    </div>
 
-        <!--NAVBAR SECTION-->
-          <div class="nav">
-            <ul>
-                <div class="list">
-                    <li><a href="#" class="n1">Home</a></li>
-                    <li><a href="#" class="n2">Sevices</a></li>
-                    <li><a href="#" class="n3">About Us</a></li>
-                    <li><a href="#" class="n4">Contact Us</a></li>
-                </div>
-               
-            </ul>
-          </div>
+    <!--right navbar-->
+    <div class="nav2">
+      <ul>
+        <div class="right">
+          <li><a href="#" class="log">log in</a></li>
+          <li><a href="#" class="sign">Sign in</a></li>
+        </div>
+      </ul>
+    </div>
 
-         <!--right navbar-->
-         <div class="nav2">
-            <ul>
-                <div class="right">
-                    <li><a href="#" class="log">log in</a></li>
-                    <li><a href="#" class="sign">Sign in</a></li>
-                </div>
-            </ul>
-         </div>
-
-
-</body>
+    <!--Main part done-->
+    <section class="main">
+      <h1>Welcome to PlantParadise</h1>
+      <p>
+        Online store with a curated range of planters, hangers, seeds, soil,
+        fertiliser and gardening must-haves with A unique and refreshing mix of
+        hands-on training and interactive science stories for organisations.
+      </p>
+     <a href="#">
+     <button class="service">
+        Get Service
+   </button></a> 
+    </section>
+  </body>
 </html>
