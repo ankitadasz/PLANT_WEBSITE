@@ -66,3 +66,24 @@ a{
    background-color: #6C7172;
    border-radius: 10%;
 }
+.nav2{
+    position: absolute;
+    top: 0.5%;
+    left: 80%;
+  
+}
+.right{
+    display: grid;
+    grid-template-rows: 100px;
+    grid-template-columns: 7vw 5vw ;
+    justify-content: center;
+    align-items: center;
+}
+.log{
+    padding: 5px 10px;
+    border: 3px solid rgb(69, 69, 69) ;
+    border-radius:15% ;
+}
+.log:hover{
+    background-color: #2a2c2c;
+}
