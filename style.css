@@ -1,118 +1,153 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-.img{
+  }
+  
+  .img-container {
+    position: relative;
     width: 100%;
     height: 110vh;
-    opacity: .8;
-}
-ul li{
-    list-style-type:none;
-}
-.nav{
+    overflow: hidden;
+  }
+  
+  .img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .img-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7));
+    z-index: 1;
+  }
+  
+  ul li {
+    list-style-type: none;
+  }
+  
+  .nav {
     position: absolute;
     top: 0.5%;
     left: 20%;
+  }
   
-}
-a{
-    list-style-type:none;
+  a {
+    list-style-type: none;
     text-decoration: none;
     font-family: 'Pally', sans-serif;
-     color: rgb(255, 255, 255);
-     font-weight: 800;
-     letter-spacing: 2px;
-     font-size: larger;
-}
-
-.list{
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    letter-spacing: 2px;
+    font-size: larger;
+  }
+  
+  .list {
     display: grid;
     grid-template-rows: 100px;
     grid-template-columns: 10vw 10vw 10vw 15vw;
     justify-content: center;
     align-items: center;
-}
-.n1{
-     padding: 3px 15px 3px 15px;
-}
-.n1:hover{
+  }
+  
+  .n1 {
+    padding: 3px 15px 3px 15px;
+  }
+  
+  .n1:hover {
     border: 3px solid rgb(69, 69, 69);
-    background-color: #6C7172;
-    border-radius: 10%;
-}
-.n2{
+    background-color: #6c7172;
+    border-radius: 3%;
+  }
+  
+  .n2 {
     padding: 3px 15px 3px 15px;
-}
-.n2:hover{
-   border: 3px solid rgb(69, 69, 69);
-   background-color: #6C7172;
-   border-radius: 10%;
-}
-.n3{
+  }
+  
+  .n2:hover {
+    border: 3px solid rgb(69, 69, 69);
+    background-color: #6c7172;
+    border-radius: 3%;
+  }
+  
+  .n3 {
     padding: 3px 15px 3px 15px;
-}
-.n3:hover{
-   border: 3px solid rgb(69, 69, 69);
-   background-color: #6C7172;
-   border-radius: 10%;
-}
-.n4{
+  }
+  
+  .n3:hover {
+    border: 3px solid rgb(69, 69, 69);
+    background-color: #6c7172;
+    border-radius: 3%;
+  }
+  
+  .n4 {
     padding: 3px 15px 3px 15px;
-}
-.n4:hover{
-   border: 3px solid rgb(69, 69, 69);
-   background-color: #6C7172;
-   border-radius: 10%;
-}
-.nav2{
+  }
+  
+  .n4:hover {
+    border: 3px solid rgb(69, 69, 69);
+    background-color: #6c7172;
+    border-radius: 3%;
+  }
+  
+  .nav2 {
     position: absolute;
     top: 0.5%;
     left: 80%;
+  }
   
-}
-.right{
+  .right {
     display: grid;
     grid-template-rows: 100px;
-    grid-template-columns: 7vw 5vw ;
+    grid-template-columns: 7vw 5vw;
     justify-content: center;
     align-items: center;
-}
-.log{
+  }
+  
+  .log {
     padding: 5px 10px;
-    border: 3px solid rgb(69, 69, 69) ;
-    border-radius:15% ;
-}
-.log:hover{
-    background-color: #2a2c2c;
-}
-.main h1{
+    border: 3px solid rgb(69, 69, 69);
+    border-radius: 15%;
+  }
+  
+  .log:hover {
+    background-color: #175e7f;
+  }
+  
+  .main h1 {
     position: absolute;
     top: 36%;
     left: 36%;
     letter-spacing: 2px;
-   font-family: "Modern Antiqua", serif;
+    font-family: 'Modern Antiqua', serif;
     font-weight: bolder;
-   font-size: xx-large;
-   color:rgb(255, 255, 241);
-}
-.main p{
+    font-size: xx-large;
+    color: rgb(255, 255, 241);
+  }
+  
+  .main p {
     position: absolute;
     top: 45%;
     left: 26%;
-   line-height: 32px;
-   text-align: center;
-   padding-right: 20vw;
-   padding-top: 30px;
-   font-family: "Josefin Sans", sans-serif;
-   font-optical-sizing: auto;
-   font-weight: 900;
-   font-size: x-large;
-   color:rgb(255, 255, 255);
-   letter-spacing: 1px;
-}
-.service{
+    line-height: 32px;
+    text-align: center;
+    padding-right: 20vw;
+    padding-top: 30px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-size: x-large;
+    color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+  }
+  
+  .service {
     position: absolute;
     top: 78%;
     left: 43%;
@@ -120,8 +155,10 @@ a{
     height: 10%;
     border: 2px solid black;
     color: #2a2c2c;
-    font-family: "Josefin Sans", sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-weight: 700;
-    background-color: #A09E95;
+    background-color: #a09e95;
     font-size: x-large;
-}
+    box-shadow: #2a2c2c;
+  }
+  
