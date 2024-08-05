@@ -17,9 +17,48 @@ a{
 .navigation{
     display: flex;
     flex-flow: row wrap;
-    gap: 4%;
-    margin-top: 3%;
-    margin-left: 20%;
-    /*justify-items: center;
-    align-items: center;*/
+    margin-left: 5vw;
+    align-items: center;
+    gap: 70px;
+}
+.logo img{
+  width: 88px;
+  height: 45px;
+}
+.n{
+  font-size: 1.2rem;
+  color: rgb(255, 255, 255);
+  padding: 8px 16px; /* Adjust padding to maintain the size */
+  position: relative;
+  transition: color 0.3s ease; /* Smooth transition for the hover effect */
+  z-index: 1;
+}
+
+.n::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+  z-index: -1;
+}
+
+.n:hover::before {
+  border-color: white;
+  background-color: white;
+  
+}
+
+.n:hover {
+  color: rgb(0, 0, 0);
+}
+
+.navbar{
+  display: flex;
+  margin-top: 15px;
+  margin-left: 25px;
 }
